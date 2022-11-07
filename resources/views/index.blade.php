@@ -8,13 +8,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>{{ $title }}</title>
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+
+    <style>
+        .image-index {
+            height: 40vh;
+            width: auto;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
 <body>
     {{-- navbar section--}}
 	@include('partials.navbar')
 
     {{-- content --}}
-    <div id="image-text" class="d-flex align-items-center justify-content-center mb-3 image-index" style="background-image: url('{{ asset('img/index_img.jpg')}}')">
+    <div id="image-text" class="d-flex align-items-center justify-content-center mb-3 image-index" style="background-image: url('{{ asset('img/index_img.jpg')}}') ">
         <div class="text-center">
             <p class="display-3">KKP Budi Indratno</p>
         </div>
