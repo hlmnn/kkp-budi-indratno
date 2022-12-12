@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,9 @@ use App\Http\Controllers\PageController;
 
 # === route untuk halaman awal ===
 Route::get('/', [PageController::class, 'index']);
+
+// === route untuk halaman login ===
+Route::get('/login', [LoginController::class, 'index']);
+
+// === route untuk halaman register ===
+Route::get('/register', [RegisterController::class, 'index']);
